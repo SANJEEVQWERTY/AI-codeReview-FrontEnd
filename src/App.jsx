@@ -69,7 +69,7 @@ function App() {
   }, [code]); // Add code as dependency for effect.
 
  async function reviewCode() {
-     const response = await axios.post('https://ai-codereview.onrender.com/ai/get-review', {code})
+     const response = await axios.post('https://ai-codereview-backend.onrender.com/ai/get-review', {code})
 
      setReview(response.data)
   }
