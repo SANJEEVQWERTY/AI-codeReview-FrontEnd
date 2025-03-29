@@ -77,6 +77,7 @@ function App() {
   return (
     <>
       <main>
+        <div className="main-div">
         <div className="left">
           <div className="code">
             <Editor
@@ -106,6 +107,7 @@ function App() {
           rehypePlugins={[rehypeHighlight]}
 
           >{review}</Markdown>
+        </div>
         </div>
       </main>
     </>

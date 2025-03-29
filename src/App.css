@@ -11,6 +11,10 @@ body,
   width: 100%;
 }
 
+.main-div{
+  display: flex;
+  width: 100%;
+}
 main {
   height: 100%;
   width: 100%;
@@ -61,4 +65,10 @@ main .left .review {
   cursor: pointer;
   user-select: none;
   border-radius: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .main-div{
+    flex-direction: column;
+  }
 }
